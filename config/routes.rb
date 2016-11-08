@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   resource :articles
   
   get 'articles/:id', to: 'articles#show', as: :article
+  get 'articles/edit.:id', to: 'articles#edit', as: :edit
+  patch 'articles/:id', to: 'articles#update', as: :update
+  delete 'articles/:id', to: 'articles#destroy', as: :delete
   
-  root 'articles#index'
+  root to: 'articles#index'
 end
