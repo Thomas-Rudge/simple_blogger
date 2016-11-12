@@ -1,24 +1,11 @@
-# README
+# Simple Blogger
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+See the app in action [here](https://floating-beach-39426.herokuapp.com/) on Heroku.
 
-Things you may want to cover:
+To create a new user go to /authors/new. Only one user is permitted.
 
-* Ruby version
+Ruby version 2.3.0
+Rails 5.0.0.1
 
-* System dependencies
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
