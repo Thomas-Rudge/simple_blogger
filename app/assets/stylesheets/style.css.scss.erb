@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'komika';
-  src: font-url('/assets/KOMTXT.eot');
-  src: font-url('/assets/KOMTXT.eot?#iefix') format('embedded-opentype'),
-       font-url('/assets/KOMTXT.woff') format('woff'),
-       font-url('/assets/KOMTXT.ttf') format('truetype'),
-       font-url('/assets/KOMTXT.svg#komika_textregular') format('svg');
+  src: font-url('<%= asset_path("KOMTXT.eot") %>');
+  src: font-url('<%= asset_path("KOMTXT.eot?#iefix") %>') format('embedded-opentype'),
+       font-url('<%= asset_path("KOMTXT.woff") %>') format('woff'),
+       font-url('<%= asset_path("KOMTXT.ttf") %>') format('truetype'),
+       font-url('<%= asset_path("KOMTXT.svg#komika_textregular") %>') format('svg');
   font-weight: normal;
   font-style: normal;
 }
