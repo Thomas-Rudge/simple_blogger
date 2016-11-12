@@ -1,0 +1,282 @@
+@font-face {
+  font-family: 'komika';
+  src: url("fonts/KOMTXT.eot");
+  src: url("fonts/KOMTXT.eot?#iefix") format("embedded-opentype"), url("fonts/KOMTXT.woff") format("woff"), url("fonts/KOMTXT.ttf") format("truetype"), url("fonts/KOMTXT.svg#komika_textregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 13, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+html {
+  height: 100%;
+  width: 100%;
+  background-image: url("body.png");
+  background-repeat: repeat;
+}
+
+/* line 20, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+body {
+  width: 900px;
+  background-color: #D6D6D6;
+  margin: 0px auto;
+  box-shadow: 1px 0px 40px #262626;
+}
+
+/* line 27, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+h1 {
+  color: #051B2B;
+  font-family: komika;
+  font-size: 30pt;
+}
+
+/* line 33, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+ul {
+  list-style: none;
+  width: 600px;
+}
+
+/* line 38, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+ul li {
+  width: 100%;
+}
+
+/* line 42, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+a {
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* line 48, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+.navs {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margine: 0;
+  padding-bottom: 15px;
+}
+
+/* line 56, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+.article_link a:link, .article_link a:visited {
+  text-decoration: none;
+  color: #36596F;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* line 63, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+.article_link {
+  background-color: #E7E7E7;
+  display: inline-flex;
+  padding: 14px 25px;
+  border: solid 2px #B0BFC9;
+}
+
+/* line 70, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+.article_link:hover {
+  border: solid 2px #051B2B;
+}
+
+/* line 74, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+.article_link a:hover {
+  color: #051B2B;
+}
+
+/* line 78, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+.summary {
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+}
+
+/* line 84, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+.new_user_label {
+  width: 200px;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  padding-right: 5px;
+}
+
+/* line 92, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+.nav_link:link, .nav_link:visited {
+  background-color: transparent;
+  color: #051B2B;
+  font-weight: normal;
+  text-align: left;
+  border: none;
+  padding: 5px 5px;
+}
+
+/* line 101, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+.nav_link_div {
+  width: 150px;
+  padding: 20px 0;
+}
+
+/* line 106, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+.article_tag:link, .article_tag:visited {
+  text-align: left;
+  text-decoration: none;
+  color: #051B2B;
+  background-color: transparent;
+  padding: 0 6px;
+  font-weight: normal;
+  display: inline-block;
+  border: none;
+  font-size: 12px;
+}
+
+/* line 118, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+.tag_title:link, .tag_title:visited {
+  text-align: center;
+  text-decoration: none;
+  color: #051B2B;
+  background-color: #E7E7E7;
+  padding: 14px 25px;
+  font-weight: bold;
+  display: inline-block;
+  border: solid 2px #051B2B;
+  width: 70%;
+}
+
+/* line 130, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+.tag_title:hover {
+  color: #E7E7E7;
+  background-color: #051B2B;
+  border: solid 2px #051B2B;
+}
+
+/* line 136, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+.delete_tag:link, .delete_tag:visited {
+  text-align: left;
+  text-decoration: none;
+  color: #051B2B;
+  background-color: transparent;
+  padding: 14px 25px;
+  font-weight: normal;
+  display: inline-block;
+  border: none;
+  width: 50px;
+}
+
+/* line 148, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+.nav_link:hover, .article_tag:hover, .delete_tag:hover {
+  font-weight: bold;
+}
+
+/* line 152, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+.tags_container {
+  display: inline-flex;
+  font-size: 12px;
+}
+
+/* line 160, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+.field {
+  display: flex;
+  padding: 0 0 5px 0;
+}
+
+/* line 165, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+.actions {
+  padding: 30px;
+}
+
+/* line 169, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+.article {
+  background-color: #E5E5E5;
+  padding: 15px;
+  color: #051B2B;
+  font-size: 16px;
+  border: groove;
+}
+
+/* line 177, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+.article_dateline {
+  font-size: 12px;
+  color: #3C3C3C;
+}
+
+/* line 182, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+.article_image {
+  margin: 0;
+  padding: 0;
+  margin-left: -65px;
+}
+
+/* line 188, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+.comment, .new_comment {
+  font-size: 14px;
+}
+
+/* line 192, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+.comment_title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* line 197, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+.comment_container {
+  width: 50%;
+}
+
+/* line 201, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+#home {
+  float: left;
+}
+
+/* line 205, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+#home a:link, #home a:visited, #loggin a:link, #loggin a:visited {
+  color: #051B2B;
+}
+
+/* line 209, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+#home a:hover, #loggin a:hover {
+  color: #36596F;
+}
+
+/* line 213, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+#loggin {
+  float: right;
+}
+
+/* line 217, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+#wrapper {
+  background: none;
+  padding: 20px 15px 20px 15px;
+  margin: 0 50px 0px 50px;
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 14px;
+}
+
+/* line 227, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+#articles {
+  min-width: 200px;
+  max-width: 700px;
+}
+
+/* line 232, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+#tags li {
+  display: inline-flex;
+}
+
+/* line 236, /home/thomas/GitHub/simple_blogger/app/assets/stylesheets/style.css.scss.erb */
+#comment_body {
+  width: 50%;
+  height: 100px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
