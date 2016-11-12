@@ -7,7 +7,7 @@
 <% end %>
 </p>
 
-<p class='article'><%= @article.body %></p>
+<div class='article'><%= simple_format(@article.body) %></div>
 <p class='tags_container'> Tags:
   <% @article.tags.each do |tag| %>
     <%= link_to tag.name, tag_path(tag), class: 'article_tag' %>
