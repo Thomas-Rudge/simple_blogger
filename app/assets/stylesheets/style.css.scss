@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'komika';
-  src: url('fonts/KOMTXT.eot');
-  src: url('fonts/KOMTXT.eot?#iefix') format('embedded-opentype'),
-       url('fonts/KOMTXT.woff') format('woff'),
-       url('fonts/KOMTXT.ttf') format('truetype'),
-       url('fonts/KOMTXT.svg#komika_textregular') format('svg');
+  src: asset-url('fonts/KOMTXT.eot');
+  src: asset-url('fonts/KOMTXT.eot?#iefix') format('embedded-opentype'),
+       asset-url('fonts/KOMTXT.woff') format('woff'),
+       asset-url('fonts/KOMTXT.ttf') format('truetype'),
+       asset-url('fonts/KOMTXT.svg#komika_textregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -13,7 +13,7 @@
 html {
   height: 100%;
   width: 100%;
-  background-image: url("body.png");
+  background-image: asset-url("body.png");
   background-repeat: repeat;
 }
 
