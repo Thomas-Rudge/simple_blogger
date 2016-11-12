@@ -30,6 +30,13 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Use paperclip and mini_magick for image handling
+gem 'paperclip'
+gem 'mini_magick'
+
+# Use sorcery for auth
+gem 'sorcery'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri

@@ -1,0 +1,25 @@
+<h1>Login</h1>
+
+<%= form_tag author_sessions_path, method: :post do %>
+  <div class="field">
+    <div class='new_user_label' style='width:100px'>
+      <%= label_tag :email %>
+    </div>
+    <div>
+      <%= text_field_tag :email %>
+    </div>
+  </div>
+  <div class="field">
+    <div class='new_user_label' style='width:100px'>
+      <%= label_tag :password %>
+    </div>
+    <div>
+      <%= password_field_tag :password %>
+    </div>
+  </div>
+  <div class="actions">
+    <%= submit_tag "Login" %>
+  </div>
+<% end %>
+
+<%= link_to 'Back', articles_path %>

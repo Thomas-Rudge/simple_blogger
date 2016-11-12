@@ -2,6 +2,20 @@
 
 <ul>
   <% @tag.articles.each do |article| %>
-    <li><%= link_to article.title, article_path(article) %></li>
+    <li class='article_link'>
+      <% if article.image.exists? %>
+        <div>
+          <%= link_to article_path(article) do %>
+            <%= image_tag article.image.url(:thumb), class: 'thumb_image' %>
+          <% end %>
+        </div>
+      <% end %>
+      <div class='summary'>
+        <%= link_to article.title, article_path(article), class: 'article_title' %>
+        <p>
+          <%= article.body[0..200] + '...' %>
+        </p>
+      </div>
+    </li>
   <% end %>
 </ul>

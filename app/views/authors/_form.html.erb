@@ -1,0 +1,53 @@
+<%= form_for(author) do |f| %>
+  <% if author.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(author.errors.count, "error") %> prohibited this author from being saved:</h2>
+
+      <ul>
+      <% author.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <div class='new_user_label'>
+      <%= f.label :username, class: 'new_user_label' %>
+    </div>
+    <div>
+      <%= f.text_field :username %>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class='new_user_label'>
+      <%= f.label :email, class: 'new_user_label' %>
+    </div>
+    <div>
+      <%= f.text_field :email %>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class='new_user_label'>
+      <%= f.label :password, class: 'new_user_label' %>
+    </div>
+    <div>
+      <%= f.text_field :password %>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class='new_user_label'>
+      <%= f.label :password_confirmation, class: 'new_user_label' %>
+    </div>
+    <div>
+      <%= f.text_field :password_confirmation %>
+    </div>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

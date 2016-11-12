@@ -9,7 +9,22 @@
   </head>
 
   <body>
-    <p class="flash"><%= flash.notice %></p>
-    <%= yield %>
+    <div id="wrapper">
+      <div class='navs'>
+        <h6 id='home'>
+          <%= link_to 'Home', root_path %>
+        </h6>
+        <h6 id='loggin'>
+          <% if logged_in? %>
+            <%= "Logged in: #{current_user.email}" %>
+            <%= link_to 'logout', logout_path %>
+          <% else %>
+            <%= link_to 'login', login_path %>
+          <% end %>
+        </h6>
+      </div>
+      <p class="flash"><%= flash.notice %></p>
+      <%= yield %>
+    </div>
   </body>
 </html>
